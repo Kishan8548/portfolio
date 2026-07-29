@@ -62,16 +62,20 @@ export function About() {
           {/* Image + Terminal */}
           <FadeIn direction="left">
             <div className="space-y-6">
-              <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow bg-gradient-to-b from-primary/20 via-background to-background flex items-end justify-center">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,hsl(0_80%_35%)_0%,transparent_65%)] opacity-30" />
+              <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow bg-[#0a0606] h-[480px]">
+                {/* Red glow at top */}
+                <div className="absolute inset-0 z-10 pointer-events-none bg-[radial-gradient(ellipse_at_top,hsl(0_80%_30%)_0%,transparent_60%)] opacity-40" />
+                {/* Photo — fill+cover crops the white background edges */}
                 <Image
                   src="/images/profile-pic.png"
                   alt="Kishan Garhwal"
-                  width={600}
-                  height={600}
-                  className="relative z-10 w-full aspect-square object-cover scale-110 translate-y-8 [mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)]"
+                  fill
+                  className="object-cover object-top scale-105"
                   priority
                 />
+                {/* Gradient overlay fading into dark at bottom */}
+                <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-background via-background/30 to-transparent" />
+              </div>
               </div>
 
               {/* Terminal block */}
