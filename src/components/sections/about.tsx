@@ -62,10 +62,10 @@ export function About() {
           {/* Image + Terminal */}
           <FadeIn direction="left">
             <div className="space-y-6">
-              <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow bg-[#050202] h-[480px] flex items-end justify-center">
+              <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow bg-[#050202] aspect-square flex items-end justify-center">
                 {/* Center radial red glow */}
                 <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
-                  <div className="w-[70%] h-[70%] bg-primary/30 rounded-full blur-[80px]" />
+                  <div className="w-[80%] h-[80%] bg-primary/30 rounded-full blur-[80px]" />
                 </div>
                 
                 {/* Profile Picture (using the transparent PNG) */}
@@ -74,7 +74,7 @@ export function About() {
                   alt="Kishan Garhwal"
                   width={500}
                   height={500}
-                  className="relative z-10 w-[95%] h-[105%] object-contain object-bottom scale-[1.15] translate-y-6"
+                  className="relative z-10 w-full h-full object-cover object-bottom scale-110"
                   priority
                 />
                 
