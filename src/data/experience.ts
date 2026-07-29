@@ -8,6 +8,14 @@ export interface Achievement {
 
 export const achievements: Achievement[] = [
   {
+    title: "Amazon ML Summer School 2026",
+    subtitle: "Selected Participant — Machine Learning",
+    period: "2026",
+    description:
+      "Selected for Amazon's prestigious ML Summer School 2026, a highly competitive program covering core ML concepts including supervised learning, deep learning, NLP, and reinforcement learning.",
+    tags: ["Amazon", "Machine Learning", "ML Summer School"],
+  },
+  {
     title: "Competitive Programming",
     subtitle: "LeetCode Knight · Codeforces Pupil",
     period: "2025",
