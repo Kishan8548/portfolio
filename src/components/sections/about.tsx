@@ -70,7 +70,7 @@ export function About() {
                 
                 {/* Profile Picture (using the transparent PNG) */}
                 <Image
-                  src="/images/profile-pic copy.png"
+                  src="/images/profile-pic-transparent.png"
                   alt="Kishan Garhwal"
                   width={500}
                   height={500}
