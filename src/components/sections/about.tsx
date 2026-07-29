@@ -62,18 +62,24 @@ export function About() {
           {/* Image + Terminal */}
           <FadeIn direction="left">
             <div className="space-y-6">
-              <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow bg-[#0d0404] flex items-center justify-center min-h-[420px]">
-                {/* Deep crimson radial glow */}
-                <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_70%_at_50%_50%,hsl(0_70%_25%)_0%,transparent_70%)] opacity-60" />
-                {/* Image with radial mask — fades white edges, keeps person visible */}
+              <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow bg-[#050202] h-[480px] flex items-end justify-center">
+                {/* Center radial red glow */}
+                <div className="absolute inset-0 pointer-events-none flex items-center justify-center">
+                  <div className="w-[70%] h-[70%] bg-primary/30 rounded-full blur-[80px]" />
+                </div>
+                
+                {/* Profile Picture (using the transparent PNG) */}
                 <Image
-                  src="/images/profile-pic.jpeg"
+                  src="/images/profile-pic copy.png"
                   alt="Kishan Garhwal"
                   width={500}
                   height={500}
-                  className="relative z-10 w-full object-contain [mask-image:radial-gradient(ellipse_55%_75%_at_50%_45%,black_40%,transparent_80%)]"
+                  className="relative z-10 w-[95%] h-[105%] object-contain object-bottom scale-[1.15] translate-y-6"
                   priority
                 />
+                
+                {/* Bottom dark fade to blend the bottom edge smoothly */}
+                <div className="absolute bottom-0 left-0 right-0 h-16 z-20 pointer-events-none bg-gradient-to-t from-[#050202] to-transparent" />
               </div>
 
               {/* Terminal block */}
