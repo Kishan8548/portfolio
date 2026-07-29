@@ -67,7 +67,7 @@ export function About() {
                 <div className="absolute inset-0 pointer-events-none bg-[radial-gradient(ellipse_80%_70%_at_50%_50%,hsl(0_70%_25%)_0%,transparent_70%)] opacity-60" />
                 {/* Image with radial mask — fades white edges, keeps person visible */}
                 <Image
-                  src="/images/profile-pic.png"
+                  src="/images/profile-pic.jpeg"
                   alt="Kishan Garhwal"
                   width={500}
                   height={500}
