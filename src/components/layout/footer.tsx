@@ -6,11 +6,11 @@ export function Footer() {
     <footer className="border-t border-border/50">
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-4 px-6 py-8 sm:flex-row sm:justify-between">
         <p className="font-mono text-xs text-muted-foreground">
-          &copy; {new Date().getFullYear()} Nishchal Chandel. All rights reserved.
+          &copy; {new Date().getFullYear()} Kishan Garhwal. All rights reserved.
         </p>
         <div className="flex items-center gap-4">
           <a
-            href="https://github.com/ayanokojix21"
+            href="https://github.com/Kishan8548"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"
@@ -20,7 +20,7 @@ export function Footer() {
           </a>
           <Separator orientation="vertical" className="h-4" />
           <a
-            href="https://www.linkedin.com/in/nishchal-chandel-b043b9319/"
+            href="https://www.linkedin.com/in/kishan-garhwal-122298331/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-muted-foreground transition-colors hover:text-foreground"

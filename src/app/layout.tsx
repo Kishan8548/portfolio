@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
+import { CustomCursor } from "@/components/ui/custom-cursor";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,20 +16,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nishchal Chandel — CS Undergrad & AI Developer",
+  title: "Kishan Garhwal — Android & AI Developer",
   description:
-    "Portfolio of Nishchal Chandel (@ayanokojix21) — CS undergrad at IIIT Lucknow building multi-agent AI systems, open-source LangChain integrations, and competitive programming solutions.",
+    "Portfolio of Kishan Garhwal (@Kishan8548) — CS undergrad at IIIT Lucknow building Android apps, multi-agent AI systems, and competitive programming solutions.",
   openGraph: {
-    title: "Nishchal Chandel — CS Undergrad & AI Developer",
+    title: "Kishan Garhwal — Android & AI Developer",
     description:
-      "CS undergrad at IIIT Lucknow building multi-agent AI systems and open-source tools.",
+      "CS undergrad at IIIT Lucknow building Android apps and AI systems.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Nishchal Chandel — CS Undergrad & AI Developer",
+    title: "Kishan Garhwal — Android & AI Developer",
     description:
-      "CS undergrad at IIIT Lucknow building multi-agent AI systems and open-source tools.",
+      "CS undergrad at IIIT Lucknow building Android apps and AI systems.",
   },
 };
 
@@ -43,6 +44,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-grid">
+        <CustomCursor />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

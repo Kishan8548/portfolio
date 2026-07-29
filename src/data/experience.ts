@@ -8,35 +8,35 @@ export interface Achievement {
 
 export const achievements: Achievement[] = [
   {
-    title: "Hack4Good by Notion",
-    subtitle: "1st Place — State-Level Hackathon",
-    period: "2026",
-    description:
-      "Built a project using Notion's API and won 1st place in this state-level hackathon.",
-    tags: ["Hackathon", "1st Place"],
-  },
-  {
-    title: "Kaggle Competition",
-    subtitle: "1st Place — CNN Skin Lesion Classification",
+    title: "LeetCode — Knight",
+    subtitle: "Max Rating: 1950+ · 1000+ Problems Solved",
     period: "2025",
     description:
-      "Placed 1st in a competition focused on classifying skin lesions using Convolutional Neural Networks.",
-    tags: ["Kaggle", "Deep Learning", "1st Place"],
+      "Active in competitive programming on LeetCode. Reached Knight badge by solving 1000+ algorithmic problems.",
+    tags: ["Competitive Programming", "DSA", "Knight"],
   },
   {
-    title: "Codeforces — Specialist",
-    subtitle: "Max Rating: 1448 · 750+ Problems Solved",
-    period: "2026 — Present",
+    title: "Codeforces — Pupil",
+    subtitle: "Max Rating: Pupil · Regular Contestant",
+    period: "2025",
     description:
-      "Active in competitive programming. Reached Specialist rank on Codeforces and have solved 750+ problems across various platforms.",
-    tags: ["Competitive Programming", "DSA"],
+      "Consistent participation in Codeforces rounds. Achieved Pupil rank with a strong focus on algorithmic problem solving and data structures.",
+    tags: ["Codeforces", "Pupil", "Problem Solving"],
   },
   {
-    title: "AXIOS ML Wing",
-    subtitle: "Machine Learning Wing Member @ IIIT Lucknow",
+    title: "AXIOS App Wing",
+    subtitle: "App Wing Member @ IIIT Lucknow",
     period: "2025 — Present",
     description:
-      "Part of the core ML team for our college's technical society. I help organize events and teach machine learning basics to juniors.",
-    tags: ["Teaching", "Machine Learning"],
+      "Part of the core App development team for our college's technical society. I help build applications and collaborate with peers on mobile tech.",
+    tags: ["Android Development", "App Wing"],
+  },
+  {
+    title: "Open Source Contributor",
+    subtitle: "Active Contributor to Oppia & Wikimedia",
+    period: "2024 — Present",
+    description:
+      "Actively contributing to major open-source projects including Oppia and Wikimedia, focusing on feature development and issue resolution.",
+    tags: ["Open Source", "Oppia", "Wikimedia"],
   },
 ];

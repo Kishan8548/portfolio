@@ -7,6 +7,7 @@ import {
   KaggleIcon,
   CodeforcesIcon,
   LeetCodeIcon,
+  CodeChefIcon,
 } from "@/components/ui/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -16,27 +17,22 @@ import { FadeIn } from "@/components/motion/fade-in";
 const contactLinks = [
   {
     name: "GitHub",
-    url: "https://github.com/ayanokojix21",
+    url: "https://github.com/Kishan8548",
     icon: GithubIcon,
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/nishchal-chandel-b043b9319/",
+    url: "https://www.linkedin.com/in/kishan-garhwal-122298331/",
     icon: LinkedinIcon,
   },
   {
-    name: "Kaggle",
-    url: "https://www.kaggle.com/nishchalchandel",
-    icon: KaggleIcon,
-  },
-  {
     name: "Codeforces",
-    url: "https://codeforces.com/profile/Ayanokoji21",
+    url: "https://codeforces.com/profile/kishan_455",
     icon: CodeforcesIcon,
   },
   {
     name: "LeetCode",
-    url: "https://leetcode.com/u/Ayanokoji21/",
+    url: "https://leetcode.com/u/kishan_455/",
     icon: LeetCodeIcon,
   },
 ];
@@ -56,13 +52,13 @@ export function Contact() {
             <CardContent className="p-8 text-center">
               <div className="mb-8 space-y-4">
                 <a
-                  href="https://mail.google.com/mail/?view=cm&fs=1&to=nishchandel21@gmail.com"
+                  href="https://mail.google.com/mail/?view=cm&fs=1&to=kishangarhwal@gmail.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group inline-flex items-center gap-2 text-lg font-mono text-primary transition-colors hover:text-foreground"
                 >
                   <Mail className="h-5 w-5" />
-                  nishchandel21@gmail.com
+                  kishangarhwal@gmail.com
                   <ArrowUpRight className="h-4 w-4 opacity-0 transition-all group-hover:opacity-100 group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
                 </a>
               </div>

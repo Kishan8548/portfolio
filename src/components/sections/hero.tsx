@@ -50,8 +50,8 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="mb-4 text-5xl font-bold tracking-tight sm:text-7xl"
         >
-          Nishchal{" "}
-          <span className="gradient-text">Chandel</span>
+          Kishan{" "}
+          <span className="gradient-text">Garhwal</span>
         </motion.h1>
 
         {/* Handle */}
@@ -61,7 +61,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mb-6 font-mono text-sm text-muted-foreground"
         >
-          @ayanokojix21
+          @Kishan8548
         </motion.p>
 
         {/* Tagline */}
@@ -71,7 +71,7 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.3 }}
           className="mx-auto mb-10 max-w-2xl text-lg text-muted-foreground sm:text-xl"
         >
-          CS undergrad at IIIT Lucknow. Mostly building AI applications, doing competitive programming, and trying out new open-source tools.
+          CS undergrad at IIIT Lucknow. Mostly building Android applications, doing competitive programming, and trying out new open-source AI tools.
         </motion.p>
 
         {/* CTAs */}
@@ -88,7 +88,7 @@ export function Hero() {
             View Projects
           </a>
           <a
-            href="https://drive.google.com/file/d/1AYjLA3ob8wjfImchkQPG-OlkGIHCgvRz/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1LeRMGoQE1t-gg5P5yuZFFxQF-dn2Lxwt/view?usp=drive_link"
             target="_blank"
             rel="noopener noreferrer"
             className={buttonVariants({ variant: "outline", size: "lg" })}
@@ -98,7 +98,7 @@ export function Hero() {
           </a>
           <div className="flex items-center gap-2">
             <a
-              href="https://github.com/ayanokojix21"
+              href="https://github.com/Kishan8548"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
@@ -107,7 +107,7 @@ export function Hero() {
               <GithubIcon className="h-5 w-5" />
             </a>
             <a
-              href="https://www.linkedin.com/in/nishchal-chandel-b043b9319/"
+              href="https://www.linkedin.com/in/kishan-garhwal-122298331/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"

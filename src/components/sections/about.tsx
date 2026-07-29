@@ -7,10 +7,10 @@ import { FadeIn } from "@/components/motion/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 
 const stats = [
-  { label: "GPA", value: "9.15" },
-  { label: "Problems Solved", value: "750+" },
-  { label: "Projects Shipped", value: "4" },
-  { label: "PyPI Packages", value: "1" },
+  { label: "GPA", value: "8.43" },
+  { label: "Problems Solved", value: "1000+" },
+  { label: "Projects Shipped", value: "6" },
+  { label: "Tech Stacks", value: "15+" },
 ];
 
 export function About() {
@@ -30,8 +30,8 @@ export function About() {
               <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow bg-gradient-to-b from-primary/20 via-background to-background flex items-end justify-center">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,var(--color-primary)_0,transparent_70%)] opacity-20" />
                 <Image
-                  src="/images/profile-pic-nishchal.png"
-                  alt="Nishchal Chandel"
+                  src="/images/profile-pic.png"
+                  alt="Kishan Garhwal"
                   width={600}
                   height={600}
                   className="relative z-10 w-full aspect-square object-cover scale-110 translate-y-8 [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)] -webkit-[mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]"
@@ -53,11 +53,11 @@ export function About() {
                   <pre className="font-mono text-xs leading-relaxed text-muted-foreground">
                     <code>
                       {`$ whoami
-> nishchal_chandel
+> kishan_garhwal
 
 $ cat skills.txt
-> python, langchain, pytorch,
-> next.js, mongodb, c++
+> kotlin, android, c++,
+> next.js, firebase, ai
 
 $ echo $STATUS
 > student @ iiit lucknow`}
@@ -73,22 +73,21 @@ $ echo $STATUS
             <div className="flex flex-col justify-center space-y-8">
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Hey, I&apos;m Nishchal, a Computer Science student at IIIT
-                  Lucknow. Most of my time goes into exploring machine learning
-                  and building software—especially projects involving LLMs and
-                  multi-agent systems.
+                  Hey, I&apos;m Kishan, a Computer Science student at IIIT
+                  Lucknow. Most of my time goes into exploring mobile development
+                  and building software—especially projects involving Android, AI, and
+                  Full-Stack web development.
                 </p>
                 <p>
-                  I enjoy participating in hackathons and competitive programming
-                  contests. I&apos;m currently a Specialist on Codeforces and
-                  spend a lot of time practicing DSA. Recently, I&apos;ve also
-                  been getting more involved in the open-source community.
+                  I enjoy participating in competitive programming
+                  contests. I&apos;m currently a Knight on LeetCode and Pupil on Codeforces, and
+                  spend a lot of time practicing DSA, having solved over 1000 algorithmic problems.
                 </p>
                 <p>
-                  At college, I&apos;m part of the ML wing for AXIOS (our
-                  technical society), where we host sessions to help juniors
-                  get started with machine learning. Always happy to chat about
-                  AI or open-source
+                  At college, I&apos;m part of the App wing for AXIOS (our
+                  technical society), where we help juniors
+                  get started with Android development. Always happy to chat about
+                  tech, open-source or competitive programming!
                 </p>
               </div>
 

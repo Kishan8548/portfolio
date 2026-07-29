@@ -7,32 +7,27 @@ export interface Social {
 export const socials: Social[] = [
   {
     name: "GitHub",
-    url: "https://github.com/ayanokojix21",
+    url: "https://github.com/Kishan8548",
     icon: "Github",
   },
   {
     name: "LinkedIn",
-    url: "https://www.linkedin.com/in/nishchal-chandel-b043b9319/",
+    url: "https://www.linkedin.com/in/kishan-garhwal-122298331/",
     icon: "Linkedin",
   },
   {
-    name: "Kaggle",
-    url: "https://www.kaggle.com/nishchalchandel",
-    icon: "Kaggle",
+    name: "LeetCode",
+    url: "https://leetcode.com/u/kishan_455/",
+    icon: "LeetCode",
   },
   {
     name: "Codeforces",
-    url: "https://codeforces.com/profile/Ayanokoji21",
+    url: "https://codeforces.com/profile/kishan_455",
     icon: "Codeforces",
   },
   {
     name: "CodeChef",
-    url: "https://www.codechef.com/users/ayanokoji21",
+    url: "https://www.codechef.com/users/hell_cook_65",
     icon: "CodeChef",
-  },
-  {
-    name: "LeetCode",
-    url: "https://leetcode.com/u/Ayanokoji21/",
-    icon: "LeetCode",
   },
 ];
