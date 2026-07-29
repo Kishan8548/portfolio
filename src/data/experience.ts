@@ -39,4 +39,12 @@ export const achievements: Achievement[] = [
       "Actively contributing to major open-source projects including Oppia and Wikimedia, focusing on feature development and issue resolution.",
     tags: ["Open Source", "Oppia", "Wikimedia"],
   },
+  {
+    title: "Flipkart GRiD 8.0",
+    subtitle: "Semifinalist in Software Development Track",
+    period: "2024",
+    description:
+      "Advanced to the semifinals of Flipkart GRiD 8.0, showcasing strong problem-solving skills and technical proficiency.",
+    tags: ["Hackathon", "Flipkart GRiD", "Semifinalist"],
+  },
 ];
