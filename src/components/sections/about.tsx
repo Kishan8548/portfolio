@@ -76,7 +76,6 @@ export function About() {
                 {/* Gradient overlay fading into dark at bottom */}
                 <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-t from-background via-background/30 to-transparent" />
               </div>
-              </div>
 
               {/* Terminal block */}
               <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
