@@ -63,13 +63,13 @@ export function About() {
           <FadeIn direction="left">
             <div className="space-y-6">
               <div className="relative overflow-hidden rounded-2xl border border-border/50 neon-glow bg-gradient-to-b from-primary/20 via-background to-background flex items-end justify-center">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,var(--color-primary)_0,transparent_70%)] opacity-20" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,hsl(0_80%_35%)_0%,transparent_65%)] opacity-30" />
                 <Image
                   src="/images/profile-pic.png"
                   alt="Kishan Garhwal"
                   width={600}
                   height={600}
-                  className="relative z-10 w-full aspect-square object-cover scale-110 translate-y-8 [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]"
+                  className="relative z-10 w-full aspect-square object-cover scale-110 translate-y-8 [mask-image:linear-gradient(to_bottom,black_75%,transparent_100%)]"
                   priority
                 />
               </div>
