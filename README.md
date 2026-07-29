@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kishan Garhwal — Personal Portfolio
 
-## Getting Started
+A sleek, highly interactive, and fully responsive personal developer portfolio built with **Next.js**, **React**, and **Tailwind CSS**. Designed with a custom Deep Crimson UI aesthetic and powered by modern web animations.
 
-First, run the development server:
+## 🚀 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Custom Crimson Design System:** A deep ruby and dark burgundy theme optimized for OLED screens.
+- **Dynamic Framer Motion Animations:** Smooth page transitions, scroll reveals, and a custom magnetic cursor.
+- **Projects Showcase:** Highlights of my best technical work, including full-stack and Android applications.
+- **Competitive Programming & Open Source:** Showcases achievements on LeetCode, Codeforces, Oppia, and Wikimedia.
+- **Responsive Architecture:** Built mobile-first to ensure perfect layouts across all device sizes.
+- **Next.js App Router:** Utilizing the latest routing and rendering paradigms for blazing-fast performance.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework:** [Next.js](https://nextjs.org/) (React)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **UI Components:** Customized Shadcn/UI primitives
+- **Icons:** Lucide React & Custom SVGs
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 💻 Running Locally
 
-## Learn More
+To run this project on your local machine:
 
-To learn more about Next.js, take a look at the following resources:
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/Kishan8548/portfolio.git
+   cd portfolio
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   pnpm install
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
 
-## Deploy on Vercel
+4. **View the site:**
+   Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📬 Connect with Me
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- [GitHub (@Kishan8548)](https://github.com/Kishan8548)
+- [LinkedIn](https://www.linkedin.com/in/kishan-garhwal-122298331/)
+- [LeetCode](https://leetcode.com/u/kishan_455/)
+- [Codeforces](https://codeforces.com/profile/kishan_455)
+
+---
+*Designed and built by Kishan Garhwal.*
