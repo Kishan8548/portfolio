@@ -42,7 +42,7 @@ export const achievements: Achievement[] = [
   {
     title: "Flipkart GRiD 8.0",
     subtitle: "Semifinalist in Software Development Track",
-    period: "2024",
+    period: "2026",
     description:
       "Advanced to the semifinals of Flipkart GRiD 8.0, showcasing strong problem-solving skills and technical proficiency.",
     tags: ["Hackathon", "Flipkart GRiD", "Semifinalist"],
