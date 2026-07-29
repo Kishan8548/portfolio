@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import { CustomCursor } from "@/components/ui/custom-cursor";
+import { ScrollProgressBar } from "@/components/ui/scroll-progress";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -44,6 +45,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-grid">
+        <ScrollProgressBar />
         <CustomCursor />
         <Navbar />
         <main className="flex-1">{children}</main>

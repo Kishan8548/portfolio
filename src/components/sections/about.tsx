@@ -1,17 +1,52 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { useRef, useEffect, useState } from "react";
+import { motion, useInView, animate } from "framer-motion";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { FadeIn } from "@/components/motion/fade-in";
 import { Card, CardContent } from "@/components/ui/card";
 
+// Stat definitions — numeric value + optional suffix
 const stats = [
-  { label: "GPA", value: "8.43" },
-  { label: "Problems Solved", value: "1000+" },
-  { label: "Projects Shipped", value: "6" },
-  { label: "Tech Stacks", value: "15+" },
+  { label: "GPA", numeric: 8.43, suffix: "", display: "8.43", decimals: 2 },
+  { label: "Problems Solved", numeric: 1000, suffix: "+", display: "1000+", decimals: 0 },
+  { label: "Projects Shipped", numeric: 6, suffix: "", display: "6", decimals: 0 },
+  { label: "Tech Stacks", numeric: 15, suffix: "+", display: "15+", decimals: 0 },
 ];
+
+// Animated counter using useMotionValue + animate() from motion.dev docs
+function AnimatedCounter({
+  target,
+  suffix,
+  decimals,
+}: {
+  target: number;
+  suffix: string;
+  decimals: number;
+}) {
+  const [value, setValue] = useState(0);
+  const ref = useRef<HTMLSpanElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-40px" });
+
+  useEffect(() => {
+    if (!isInView) return;
+    // animate() returns a playback controller — drives value from 0 to target
+    const controls = animate(0, target, {
+      duration: 1.6,
+      ease: [0.16, 1, 0.3, 1], // expo out — fast start, smooth settle
+      onUpdate: (v) => setValue(parseFloat(v.toFixed(decimals))),
+    });
+    return () => controls.stop();
+  }, [isInView, target, decimals]);
+
+  return (
+    <span ref={ref}>
+      {decimals > 0 ? value.toFixed(decimals) : Math.floor(value)}
+      {suffix}
+    </span>
+  );
+}
 
 export function About() {
   return (
@@ -34,7 +69,7 @@ export function About() {
                   alt="Kishan Garhwal"
                   width={600}
                   height={600}
-                  className="relative z-10 w-full aspect-square object-cover scale-110 translate-y-8 [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)] -webkit-[mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]"
+                  className="relative z-10 w-full aspect-square object-cover scale-110 translate-y-8 [mask-image:linear-gradient(to_bottom,black_70%,transparent_100%)]"
                   priority
                 />
               </div>
@@ -91,20 +126,30 @@ $ echo $STATUS
                 </p>
               </div>
 
-              {/* Stats grid */}
+              {/* Stats grid — animated counters */}
               <div className="grid grid-cols-2 gap-4">
                 {stats.map((stat, i) => (
                   <motion.div
                     key={stat.label}
-                    initial={{ opacity: 0, scale: 0.9 }}
-                    whileInView={{ opacity: 1, scale: 1 }}
+                    initial={{ opacity: 0, scale: 0.85, y: 20 }}
+                    whileInView={{ opacity: 1, scale: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: i * 0.1 }}
+                    transition={{
+                      type: "spring",
+                      stiffness: 200,
+                      damping: 20,
+                      delay: i * 0.1,
+                    }}
+                    whileHover={{ scale: 1.04, y: -2 }}
                   >
-                    <Card className="border-border/50 bg-card/50 backdrop-blur-sm">
+                    <Card className="border-border/50 bg-card/50 backdrop-blur-sm cursor-default">
                       <CardContent className="p-4 text-center">
                         <p className="text-2xl font-bold gradient-text">
-                          {stat.value}
+                          <AnimatedCounter
+                            target={stat.numeric}
+                            suffix={stat.suffix}
+                            decimals={stat.decimals}
+                          />
                         </p>
                         <p className="mt-1 text-xs font-mono text-muted-foreground">
                           {stat.label}

@@ -51,7 +51,7 @@ export function Skills() {
                           </div>
                           <div className="h-1.5 overflow-hidden rounded-full bg-secondary">
                             <motion.div
-                              className="h-full rounded-full bg-gradient-to-r from-primary to-purple-500"
+                              className="h-full rounded-full skill-bar-animated"
                               initial={{ width: 0 }}
                               whileInView={{ width: `${skill.level}%` }}
                               viewport={{ once: true }}

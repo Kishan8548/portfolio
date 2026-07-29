@@ -8,20 +8,20 @@ export interface Achievement {
 
 export const achievements: Achievement[] = [
   {
-    title: "LeetCode — Knight",
-    subtitle: "Max Rating: 1950+ · 1000+ Problems Solved",
+    title: "Competitive Programming",
+    subtitle: "LeetCode Knight · Codeforces Pupil",
     period: "2025",
     description:
-      "Active in competitive programming on LeetCode. Reached Knight badge by solving 1000+ algorithmic problems.",
-    tags: ["Competitive Programming", "DSA", "Knight"],
+      "Reached Knight on LeetCode (1950+ rating) and Pupil on Codeforces through consistent participation in rated contests and a strong focus on algorithms and data structures.",
+    tags: ["LeetCode", "Codeforces", "Knight", "Pupil"],
   },
   {
-    title: "Codeforces — Pupil",
-    subtitle: "Max Rating: Pupil · Regular Contestant",
-    period: "2025",
+    title: "1000+ Problems Solved",
+    subtitle: "Across LeetCode & Codeforces",
+    period: "2024 — Present",
     description:
-      "Consistent participation in Codeforces rounds. Achieved Pupil rank with a strong focus on algorithmic problem solving and data structures.",
-    tags: ["Codeforces", "Pupil", "Problem Solving"],
+      "Solved over 1000 algorithmic problems across LeetCode and Codeforces, covering topics like dynamic programming, graphs, trees, greedy, and number theory.",
+    tags: ["DSA", "Algorithms", "1000+", "Problem Solving"],
   },
   {
     title: "AXIOS App Wing",
