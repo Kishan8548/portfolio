@@ -68,9 +68,8 @@ export function About() {
                   <div className="w-[80%] h-[80%] bg-primary/30 rounded-full blur-[80px]" />
                 </div>
                 
-                {/* Profile Picture (using the transparent PNG) */}
                 <Image
-                  src="/images/profile-pic-transparent.png"
+                  src="/images/gabimaru.png"
                   alt="Kishan Garhwal"
                   width={500}
                   height={500}
