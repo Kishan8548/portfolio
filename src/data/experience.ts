@@ -33,7 +33,7 @@ export const achievements: Achievement[] = [
   },
   {
     title: "AXIOS App Wing",
-    subtitle: "Senior Member @ IIIT Lucknow",
+    subtitle: "Senior Member - App Wing @Axios IIITL",
     period: "2025 — Present",
     description:
       "Part of the core App development team for our college's technical society. I help build applications and collaborate with peers on mobile tech.",
