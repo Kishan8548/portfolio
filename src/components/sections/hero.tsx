@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import { motion, useMotionValue, useTransform, useSpring } from "framer-motion";
 import { ArrowDown, Download } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/icons";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { useEffect, useState, useRef } from "react";
+import { InteractiveHeroBackground } from "@/components/ui/interactive-hero-background";
 
 const roles = [
   "Android Developer",
@@ -46,54 +46,16 @@ function TypewriterRole() {
 }
 
 export function Hero() {
-  const sectionRef = useRef<HTMLElement>(null);
-  const mouseX = useMotionValue(0.5);
-  const mouseY = useMotionValue(0.5);
-
-  // Spring-smoothed parallax values for orbs
-  const orb1X = useSpring(useTransform(mouseX, [0, 1], ["-12%", "12%"]), { stiffness: 40, damping: 20 });
-  const orb1Y = useSpring(useTransform(mouseY, [0, 1], ["-10%", "10%"]), { stiffness: 40, damping: 20 });
-  const orb2X = useSpring(useTransform(mouseX, [0, 1], ["12%", "-12%"]), { stiffness: 30, damping: 25 });
-  const orb2Y = useSpring(useTransform(mouseY, [0, 1], ["10%", "-10%"]), { stiffness: 30, damping: 25 });
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLElement>) => {
-    const rect = sectionRef.current?.getBoundingClientRect();
-    if (!rect) return;
-    mouseX.set((e.clientX - rect.left) / rect.width);
-    mouseY.set((e.clientY - rect.top) / rect.height);
-  };
-
   return (
     <section
-      ref={sectionRef}
-      onMouseMove={handleMouseMove}
       className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-16"
     >
-      {/* Background image */}
-      <div className="pointer-events-none absolute inset-0">
-        <Image
-          src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?w=1920&q=80&fit=crop"
-          alt=""
-          fill
-          className="object-cover opacity-10"
-          priority
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/80 to-background" />
-      </div>
+      {/* High-tech interactive canvas constellation + cyber grid */}
+      <InteractiveHeroBackground />
 
-      {/* Mouse-parallax gradient orbs */}
-      <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <motion.div
-          style={{ x: orb1X, y: orb1Y }}
-          className="absolute left-1/4 top-1/4 h-[500px] w-[500px] rounded-full bg-primary/15 blur-[140px]"
-        />
-        <motion.div
-          style={{ x: orb2X, y: orb2Y }}
-          className="absolute bottom-1/4 right-1/4 h-[500px] w-[500px] rounded-full bg-accent/10 blur-[140px]"
-        />
-      </div>
-
-      <div className="relative z-10 mx-auto max-w-4xl text-center">
+      <div
+        className="relative z-10 mx-auto max-w-4xl text-center pointer-events-auto"
+      >
         {/* Status badge — spring bounce in */}
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.9 }}

@@ -30,7 +30,7 @@ export function Education() {
               >
                 <Card className="border-border/50 bg-card/50 backdrop-blur-sm overflow-hidden">
                   {/* Gradient top accent */}
-                  <div className="h-1 w-full bg-gradient-to-r from-cyan-500 via-purple-500 to-pink-500" />
+                  <div className="h-1 w-full bg-gradient-to-r from-primary via-accent to-primary" />
 
                   <CardContent className="p-6 sm:p-8">
                     <div className="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
