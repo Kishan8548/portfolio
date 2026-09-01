@@ -9,7 +9,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 // Stat definitions — numeric value + optional suffix
 const stats = [
-  { label: "GPA", numeric: 8.43, suffix: "", display: "8.43", decimals: 2 },
+  { label: "GPA", numeric: 8.51, suffix: "", display: "8.51", decimals: 2 },
   { label: "Problems Solved", numeric: 1000, suffix: "+", display: "1000+", decimals: 0 },
   { label: "Projects Shipped", numeric: 6, suffix: "", display: "6", decimals: 0 },
   { label: "Tech Stacks", numeric: 15, suffix: "+", display: "15+", decimals: 0 },
@@ -122,7 +122,7 @@ $ echo $STATUS
                 </p>
                 <p>
                   I enjoy participating in competitive programming
-                  contests. I&apos;m currently a Knight on LeetCode and Pupil on Codeforces, and
+                  contests. I&apos;m currently a Knight on LeetCode and Specialist on Codeforces, and
                   spend a lot of time practicing DSA, having solved over 1000 algorithmic problems.
                 </p>
                 <p>

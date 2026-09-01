@@ -17,11 +17,11 @@ export const achievements: Achievement[] = [
   },
   {
     title: "Competitive Programming",
-    subtitle: "LeetCode Knight · Codeforces Pupil",
+    subtitle: "LeetCode Knight · Codeforces Specialist",
     period: "2025",
     description:
-      "Reached Knight on LeetCode (1950+ rating) and Pupil on Codeforces through consistent participation in rated contests and a strong focus on algorithms and data structures.",
-    tags: ["LeetCode", "Codeforces", "Knight", "Pupil"],
+      "Reached Knight on LeetCode (1950+ rating) and Specialist on Codeforces through consistent participation in rated contests and a strong focus on algorithms and data structures.",
+    tags: ["LeetCode", "Codeforces", "Knight", "Specialist"],
   },
   {
     title: "1000+ Problems Solved",
